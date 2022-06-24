@@ -197,6 +197,7 @@ hr{
 }
 .footer_new{
     background-color: #eeeaea;
+    display: flex;
 }
 .footer_new .footer_info .name{
     font-weight: 700;
@@ -204,6 +205,9 @@ hr{
 }
 .footer_new .footer_info{
     padding: 20px;
+}
+.footer_new .footer_validation{
+    margin:auto;
 }
 .agree {
     font-size: 25px;
