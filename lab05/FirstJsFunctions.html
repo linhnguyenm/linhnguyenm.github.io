@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" />
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h3>JS Unit-Testing</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p>
+                <strong>Look in the Chrome developer console to see the output. CTRL_SHIFT_J</strong>
+                <br /><strong>Or you can try to test using this form</strong>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="command">Enter command</label>    
+                <input type="text" id="command" name="command" maxlength="255" class="form-control" value="max(5,15);" />
+                <label for="expectedResult">Enter expected result</label>    
+                <input type="text" id="expectedResult" name="expectedResult" maxlength="100" class="form-control" value="15" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-12 ">
+                <input type="button" class="btn btn-default btn-success" value="Test" onclick="test()" />
+                <input type="button" class="btn btn-default btn-danger" value="Clear" onclick="reset()" />
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12 sample">
+                <h4>Sample:</h4>
+                <p>
+                    Command: max(5,15); <br />
+                    Expected: 15
+                </p>
+
+                <p>
+                    Command: maxOfThree(1, 5, 12); <br />
+                    Expected: 12
+                </p>
+                
+                <p>
+                    Command: isVowel('A'); <br />
+                    Expected: true
+                </p>
+
+                <p>
+                    Command: sum([1,2,3,4]); <br />
+                    Expected: 10
+                </p>
+
+                <p>
+                    Command: multiply([1,2,3,4]); <br />
+                    Expected: 24
+                </p>
+
+                <p>
+                    Command: reverse("wap");<br />
+                    Expected: paw
+                </p>
+
+                <p>
+                    Command: findLongestWord(["a","hello","wap","html","javascript"]);<br />
+                    Expected: 10
+                </p>
+
+                <p>
+                    Command: filterLongWords(["a","hello","wap","html","javascript"], 4); <br />
+                    Expected: hello,javascript
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+  
+</body>
