@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Prototype</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center mt-5 mb-3">
+      <h2>JavaScript - Scope Closure & Encapsulation</h2>
+    </div>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Exercise 1: Filter string
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-12">
+                Define a filter function on the String object. The function accepts an array of strings that
+                specifies a list of banned words. The function returns the string after removing all the
+                banned words. <br />
+                Example:<br />
+                console.log("This house is not nice!".filter('not'));<br />
+                Output: "This house is nice!"<br />
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Exercise 2: BubbleSort
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-12">
+                Write a BubbleSort algorithm on the Array object. Bubble sort is a simple sorting algorithm <br />
+                that works by repeatedly stepping through the list to be sorted,<br />
+                Example:[6,4,0, 3,-2,1].bubbleSort();<br />
+                Output : [-2, 0, 1, 3, 4, 6]<br />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Exercise 3: (See the console for more details)
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-12">
+                Create an object called Teacher derived from a Person function constructor, and implement a method
+                called teach that receives a string called subject, and prints out: [teacher's name] is now teaching
+                [subject]. Create a Teacher object and call its teach method.
+                <br /><br />Also do the same thing using Object.create. When using Object.create you will need a factory
+                function instead of a function constructor in order to pass parameters such as ‘name’ to be set in the
+                prototype.
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              Exercise 4: (See the console for more details)
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-12">
+                Write code that will create person, student, and professor objects.
+                <ul>
+                  <li>Person objects have
+                    <ul>
+                      <li>name and age fields</li>
+                      <li>a greeting method that prints out: “Greetings, my name is [name] and I am
+                        [age] years old.”</li>
+                      <li> a salute method that prints out: “Good morning!, and in case I dont see you,
+                        good afternoon, good evening and good night!” ,</li>
+                      <li> Student objects inherit name, age, and salute from person. They also have a field
+                        ‘major’ and have their own greeting method. Their greeting is “Hey, my name is
+                        [name] and I am studying [major]. The greeting should be output to the console.</li>
+                      <li>Professor objects inherit name, age, and salute from person. They also have a field
+                        ‘department’ and have their own greeting method. Their salutation is “Good day,
+                        my name is [name] and I am in the [department] department.” Output it to the
+                        console. </li>
+                      <li>Create a professor object and a student object. Call both the greeting and salutation
+                        methods on each.</li>
+                      <li>Do this exercise once using the object prototype approach for inheritance and then
+                        using the function constructor approach.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
