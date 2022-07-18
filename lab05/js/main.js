@@ -26,16 +26,19 @@ function isVowel(c) {
 
 
 //function sum() that sums all the numbers in an array of numbers.
-function sum(arr) {
+function sum_loop(arr) {
     let result = 0;
     for(let i=0; i<arr.length;i++) {
         result += arr[i];
     }
     return result;
 }
-
+//Sum using Reduce
+function sum(arr){
+    return arr.reduce((x, y) => x + y);
+}
 //function multiply() that multiplies (respectively) all the numbers in an array of numbers.
-function multiply (arr){
+function multiply_loop (arr){
     if (arr.length == 0) return 0;
     let result = 1;
     for(let i=0; i<arr.length;i++) {
@@ -43,15 +46,22 @@ function multiply (arr){
     }
     return result;
 }
+//Multiply using Reduce
+function multiply (arr){
+    return arr.reduce((x, y) => x * y);
+}
+
 
 //function reverse() that computes the reversal of a string
-function reverse(str) {
+function reverse_old(str) {
     const splitString = str.split(""); 
     const reverseArray = splitString.reverse(); 
     const joinArray = reverseArray.join(""); 
     return joinArray;
 }
-
+function reverse(str){
+    return str.split("").reduce((rev, char)=> char + rev, ''); 
+}
 //function findLongestWord() that takes an array of words and returns the length of the longest one.
 function findLongestWord(arr) {
     if (arr.length > 0) {
